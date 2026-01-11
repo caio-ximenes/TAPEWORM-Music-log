@@ -1,4 +1,13 @@
-// Aqui ficarão as paletas de cores, que seguiremos no uso do projeto
+// Aqui ficarão as paletas de cores e fontes, que seguiremos no uso do projeto.
+
+
+//----------------------------------------------//
+// TODAS AS FONTES E CORES DE CADA ELEMENTO DEVEM SER ADICIONADAS AQUI
+// PARA GARANTIR A UNIFORMIDADE DO PROJETO.
+//----------------------------------------------//
+
+
+
 // Paleta de cores - nomes genericos
 $cor-preta: #000000;
 $cor-cinza: #333333;
@@ -6,6 +15,12 @@ $cor-branca: #FFFFFF;
 $cor-vermelha: #FF0000;
 $cor-vermelha-claro: #ff3f3f;
 $cor-vermelha-erro:#ca0300;
+
+// Fontes
+$fonte-titulos: 'Rubik Doodle Shadow', cursive;
+$fonte-titulos-menores: 'Roboto', cursive;
+$fonte-textos-menores: 'Roboto', mono;
+$fonte-botoes: 'Rubik Bubbles', cursive;
 
 // Palheta indentidade visual Tapeworm Music Log
 $cor-primaria:$cor-preta;
@@ -24,11 +39,14 @@ $background-color-page: $cor-secundaria;
 $background-color-dark: $cor-primaria;
 $background-color-input: $background-color-page;
 
-// --- Cores de Botão ---
+// --- Estilos de Botão ---
 // Borão principal
 $button-primary-background: $cor-primaria;
 $button-primary-text: $cor-secundaria;
 $button-primary-hover: $cor-terciaria;
+
+$button-primary-font: $fonte-botoes;
+
 
 
 
@@ -37,14 +55,19 @@ $button-danger-background:$cor-alerta;
 $button-danger-text: $cor-branca;
 $button-danger-hover: $cor-vermelha-claro;
 
-// --- Cores de Formulário ---
+$button-danger-font: $fonte-botoes;
+
+// --- Estilos de Input ---
 $input-border-color: $cor-primaria;
 $input-text-color: $cor-primaria;
+$input-label-color: $cor-primaria;
 $input-placeholder-color: $cor-terciaria;
 $input-error-color: $cor-vermelha-erro;
 
-// --- Família da Fonte ---
-$font-family-base: 'Roboto', sans-serif;
+$input-placeholder-font: $fonte-textos-menores;
+$input-label-font: $fonte-titulos-menores;
+
+
 
 // --- Tamanhos de Fonte ---
 $font-size-title-lg: 26px; // Títulos grandes"

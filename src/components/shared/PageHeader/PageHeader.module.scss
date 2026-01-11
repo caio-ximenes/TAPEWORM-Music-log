@@ -1,4 +1,4 @@
-@import url('../../../styles/variables.scss');
+@import '../../../styles/variables.scss';
 
 .header{
     display: flex;
@@ -6,10 +6,12 @@
     align-items: center;
     width: 100%;
     min-height: 5vh;
+    background-color: $cor-primaria;
     
 
     &__link{
-
+        color: $cor-secundaria;
+        
     }
     
 

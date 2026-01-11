@@ -1,4 +1,20 @@
+// Aqui ficam as configurações globais de estilo do projeto
+
+
+// Expande as variáveis para uso global do projeto
 @forward './styles/variables.scss';
+
+
+// Importação das fontes do projeto
+
+//Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+//Rubik Doodle Shadow
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap');
+//Rubik Bubbles
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&display=swap');
+
+
 
 *{
   margin: 0;
