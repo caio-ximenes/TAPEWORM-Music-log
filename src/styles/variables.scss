@@ -1,0 +1,68 @@
+// Aqui ficarão as paletas de cores, que seguiremos no uso do projeto
+// Paleta de cores - nomes genericos
+$cor-preta: #000000;
+$cor-cinza: #333333;
+$cor-branca: #FFFFFF;
+$cor-vermelha: #FF0000;
+$cor-vermelha-claro: #ff3f3f;
+$cor-vermelha-erro:#ca0300;
+
+// Palheta indentidade visual Tapeworm Music Log
+$cor-primaria:$cor-preta;
+$cor-secundaria: $cor-branca;
+$cor-terciaria:$cor-cinza;
+$cor-alerta:$cor-vermelha;
+
+// --- Cores de Texto ---
+$text-color-primary: $cor-primaria; // Para a maioria dos textos sobre fundos claros
+$text-color-secondary: $cor-terciaria; // Para textos de menor importância, placeholders
+$text-color-light: $cor-secundaria; // Para textos sobre fundos escuros
+
+
+// --- Cores de Fundo ---
+$background-color-page: $cor-secundaria;
+$background-color-dark: $cor-primaria;
+$background-color-input: $background-color-page;
+
+// --- Cores de Botão ---
+// Borão principal
+$button-primary-background: $cor-primaria;
+$button-primary-text: $cor-secundaria;
+$button-primary-hover: $cor-terciaria;
+
+
+
+//Botão de perigo
+$button-danger-background:$cor-alerta;
+$button-danger-text: $cor-branca;
+$button-danger-hover: $cor-vermelha-claro;
+
+// --- Cores de Formulário ---
+$input-border-color: $cor-primaria;
+$input-text-color: $cor-primaria;
+$input-placeholder-color: $cor-terciaria;
+$input-error-color: $cor-vermelha-erro;
+
+// --- Família da Fonte ---
+$font-family-base: 'Roboto', sans-serif;
+
+// --- Tamanhos de Fonte ---
+$font-size-title-lg: 26px; // Títulos grandes"
+$font-size-title-md: 20px; // Títulos médios"
+$font-size-body: 16px; // Texto principal, "Texto corrido normal"
+$font-size-small: 12px; // Texto pequeno, como "Digite seu nome completo"
+
+// --- Pesos da Fonte (Font Weights) ---
+$font-weight-light: 300; 
+$font-weight-regular: 400; 
+$font-weight-medium: 500; 
+$font-weight-semibold: 600; 
+
+
+// TOKENS DE UNIDADES (Espaçamento, Bordas, etc.)
+
+// --- Border Radius (Universal) ---
+$border-radius-base: 10px;
+$border-color: $cor-primaria;
+
+$padding-inputs: 8px 10px;
