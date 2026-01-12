@@ -11,6 +11,7 @@
 // Paleta de cores - nomes genericos
 $cor-preta: #000000;
 $cor-cinza: #333333;
+$cor-cinza-claro: #6b6b6b;
 $cor-branca: #FFFFFF;
 $cor-vermelha: #FF0000;
 $cor-vermelha-claro: #ff3f3f;
@@ -18,9 +19,11 @@ $cor-vermelha-erro:#ca0300;
 
 // Fontes
 $fonte-titulos: 'Rubik Doodle Shadow', cursive;
-$fonte-titulos-menores: 'Roboto', cursive;
-$fonte-textos-menores: 'Roboto', mono;
+$fonte-titulos-medios: 'Roboto', cursive;
+$fonte-titulos-menores: 'Bebas Neue', cursive;
+$fonte-textos-menores: 'Roboto-Mono', monospace;
 $fonte-botoes: 'Rubik Bubbles', cursive;
+
 
 // Palheta indentidade visual Tapeworm Music Log
 $cor-primaria:$cor-preta;
@@ -65,7 +68,18 @@ $input-placeholder-color: $cor-terciaria;
 $input-error-color: $cor-vermelha-erro;
 
 $input-placeholder-font: $fonte-textos-menores;
-$input-label-font: $fonte-titulos-menores;
+$input-label-font: $fonte-titulos-medios;
+
+// --- Estilos de Link ---
+$link-color-primary: $cor-secundaria;
+$link-color-secondary: $cor-primaria;
+$link-color-hover: $cor-cinza-claro;
+$link-font: $fonte-titulos-menores;
+
+// --- Estilos de Header ---
+$header-background-color: $cor-primaria;
+$header-text-color: $cor-secundaria;
+$header-font: $fonte-titulos-menores;
 
 
 
@@ -89,3 +103,11 @@ $border-radius-base: 10px;
 $border-color: $cor-primaria;
 
 $padding-inputs: 8px 10px;
+
+
+
+//Icons
+
+$close-icon: url('../assets/images/icons/close-svgrepo-com.svg');
+$menu-icon:url('../assets/images/icons/menu-svgrepo-com.svg');
+$logo-icon:url('../assets/images/icons/tapeworm-logo.svg');

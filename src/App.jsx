@@ -4,10 +4,7 @@ import PageHeader from './components/shared/PageHeader/PageHeader.jsx'
 
 function App() {
     const router = createBrowserRouter([
-      {
-        path: '/',
-        Component:PageHeader
-      }
+      
     
     ])
 
