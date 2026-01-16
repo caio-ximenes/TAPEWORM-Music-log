@@ -1,0 +1,33 @@
+@import '../../../styles/variables.scss';
+
+.artist-card{
+    width: 200px;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    
+    
+   
+    &:hover{
+        border: 1px black solid;
+    }
+    
+        
+    
+    &__image{
+        clip-path: circle();
+
+    
+
+    }
+
+    &__text{
+        font-family: $card-text-font;
+        font-size: $card-text-font-size-lg;
+        
+    }
+
+}
