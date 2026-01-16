@@ -8,6 +8,18 @@
 
 
 
+// --- Tamanhos de Fonte ---
+$font-size-title-lg: 26px; // Títulos grandes"
+$font-size-title-md: 20px; // Títulos médios"
+$font-size-medium: 16px; // Texto principal, "Texto corrido normal"
+$font-size-small: 12px; // Texto pequeno, como "Digite seu nome completo"
+
+// --- Pesos da Fonte (Font Weights) ---
+$font-weight-light: 200; 
+$font-weight-regular: 400; 
+$font-weight-medium: 500; 
+$font-weight-semibold: 600; 
+
 // Paleta de cores - nomes genericos
 $cor-preta: #000000;
 $cor-cinza: #333333;
@@ -29,6 +41,7 @@ $fonte-botoes: 'Rubik Bubbles', cursive;
 $cor-primaria:$cor-preta;
 $cor-secundaria: $cor-branca;
 $cor-terciaria:$cor-cinza;
+$cor-quaternaria:$cor-cinza-claro;
 $cor-alerta:$cor-vermelha;
 
 // --- Cores de Texto ---
@@ -82,18 +95,19 @@ $header-text-color: $cor-secundaria;
 $header-font: $fonte-titulos-menores;
 
 
+// --- Estilos de Card ---
+$card-width:12% ;
+$card-aspect-ratio:5 / 6 ;
+$card-text-font:$fonte-textos-menores;
+$card-text-font-size-lg:$font-size-medium;
+$card-text-font-size-sm:$font-size-small;
+$card-text-sm-color:$cor-quaternaria;
+$card-text-lg-color:$cor-primaria;
 
-// --- Tamanhos de Fonte ---
-$font-size-title-lg: 26px; // Títulos grandes"
-$font-size-title-md: 20px; // Títulos médios"
-$font-size-body: 16px; // Texto principal, "Texto corrido normal"
-$font-size-small: 12px; // Texto pequeno, como "Digite seu nome completo"
 
-// --- Pesos da Fonte (Font Weights) ---
-$font-weight-light: 300; 
-$font-weight-regular: 400; 
-$font-weight-medium: 500; 
-$font-weight-semibold: 600; 
+
+
+
 
 
 // TOKENS DE UNIDADES (Espaçamento, Bordas, etc.)

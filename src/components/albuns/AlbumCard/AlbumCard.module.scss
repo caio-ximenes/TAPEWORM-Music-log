@@ -4,8 +4,8 @@
     .album-card {
         
         display: flex;
-        width: $album-card-width;
-        aspect-ratio: $album-card-aspect-ratio;
+        width: $card-width;
+        aspect-ratio: $card-aspect-ratio;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -30,14 +30,16 @@
        
 
             &__title {
-                font-size:$font-size-medium;
-                font-family: $album-card-text-font;
+                font-size:$card-text-font-size-lg;
+                font-family: $card-text-font;
+                color: $cor-primaria;
+                
             }
 
             &__artist {
-                font-size: $font-size-small;
-                color: gray;
-                font-family: $album-card-text-font;
+                font-size: $card-text-font-size-sm;
+                color: $cor-quaternaria;
+                font-family: $card-text-font;
                 font-weight: $font-weight-light;
             }
         }
