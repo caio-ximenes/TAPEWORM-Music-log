@@ -2,7 +2,7 @@ import React from 'react'
 import Styles from './ArtistCard.module.scss'
 
 
-function ArtistCard(srcImage,artistName) {
+function ArtistCard({srcImage,artistName}) {
   return (
     <div className={Styles['artist-card']}>
         <img src={srcImage} alt="" className={Styles['artist-card__image']} />

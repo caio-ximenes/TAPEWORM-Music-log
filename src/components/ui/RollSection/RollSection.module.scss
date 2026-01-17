@@ -1,0 +1,57 @@
+@import '../../../styles/variables.scss';
+
+.roll-section {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem;
+
+
+
+    &__arrow-left {
+        width: 2vw;
+        background-color:$cor-primaria;
+        aspect-ratio: 1/1;
+        -webkit-mask-image: $arrow-left-icon;
+            mask-image: $arrow-left-icon;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+        cursor: pointer;
+
+}
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 1rem;
+        flex: 1;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        > * {
+            flex-shrink: 0;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__arrow-right {
+        width: 2vw;
+        background-color:$cor-primaria;
+        aspect-ratio: 1/1;
+        -webkit-mask-image: $arrow-right-icon;
+            mask-image: $arrow-right-icon;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+        cursor: pointer;
+}
+
+}

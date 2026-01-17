@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from './SectionPart.module.scss'
 
-function SectionPart(lineWidth,text) {
+function SectionPart({lineWidth,text}) {
   return (
     <div className={Styles['section-part']}>
         <div className={Styles['section-part__first-line']}></div>

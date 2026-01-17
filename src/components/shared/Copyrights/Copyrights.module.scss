@@ -1,0 +1,13 @@
+@import '../../../styles/variables.scss';
+
+.copyrights{
+    width: 100%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: $font-size-small;
+    font-family: $fonte-textos-menores;
+    color: $cor-quaternaria;
+}
