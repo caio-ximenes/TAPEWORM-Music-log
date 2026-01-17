@@ -11,8 +11,8 @@
 // --- Tamanhos de Fonte ---
 $font-size-title-lg: 26px; // Títulos grandes"
 $font-size-title-md: 20px; // Títulos médios"
-$font-size-medium: 16px; // Texto principal, "Texto corrido normal"
-$font-size-small: 12px; // Texto pequeno, como "Digite seu nome completo"
+$font-size-medium: 14px; // Texto principal, "Texto corrido normal"
+$font-size-small: 10px; // Texto pequeno, como "Digite seu nome completo"
 
 // --- Pesos da Fonte (Font Weights) ---
 $font-weight-light: 200; 
@@ -96,7 +96,7 @@ $header-font: $fonte-titulos-menores;
 
 
 // --- Estilos de Card ---
-$card-width:12% ;
+$card-width:9vw ;
 $card-aspect-ratio:5 / 6 ;
 $card-text-font:$fonte-textos-menores;
 $card-text-font-size-lg:$font-size-medium;

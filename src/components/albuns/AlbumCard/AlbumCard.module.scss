@@ -1,6 +1,6 @@
 @import '../../../styles/variables.scss';
 
-@media (min-width: 1024px) {
+
     .album-card {
         
         display: flex;
@@ -33,17 +33,21 @@
                 font-size:$card-text-font-size-lg;
                 font-family: $card-text-font;
                 color: $cor-primaria;
-                
+                width: 100%;
+                word-break: break-word;
+                overflow-wrap: break-word;
             }
 
             &__artist {
+                width: 100%;
                 font-size: $card-text-font-size-sm;
                 color: $cor-quaternaria;
                 font-family: $card-text-font;
                 font-weight: $font-weight-light;
+                word-break: break-word;
+                overflow-wrap: break-word;
             }
         }
     }
 
 
-}
