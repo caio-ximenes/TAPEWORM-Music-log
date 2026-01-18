@@ -1,11 +1,11 @@
 import React from 'react'
-import Styles from './SectionPart.module.scss'
+import Styles from './SectionPartition.module.scss'
 
-function SectionPart({text,width,labelBool}) {
+function SectionPartition({text,width,labelBool}) {
 
   
 
-  const sectionPart = {
+  const SectionPartition = {
     '--section-part-width':width
   }
   
@@ -13,7 +13,7 @@ function SectionPart({text,width,labelBool}) {
 
 
   return (
-    <div className={Styles['section-part']} style={sectionPart}>
+    <div className={Styles['section-part']} style={SectionPartition}>
         <div className={Styles['section-part__first-line']} ></div>
         <div className={Styles['section-part__text']} style={label}>{text}</div>
         <div className={Styles['section-part__second-line']}></div>
@@ -22,4 +22,4 @@ function SectionPart({text,width,labelBool}) {
   )
 }
 
-export default SectionPart
+export default SectionPartition

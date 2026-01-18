@@ -5,7 +5,7 @@ import RollSection from '../../components/ui/RollSection/RollSection'
 import PageHeader from '../../components/shared/PageHeader/PageHeader'
 import Copyrights from '../../components/shared/Copyrights/Copyrights'
 import ArtistCard from '../../components/artists/ArtistCard/ArtistCard'
-import SectionPart from '../../components/ui/SectionPart/SectionPart'
+import SectionPartition from '../../components/ui/SectionPartition/SectionPartition'
 
 
 
@@ -77,7 +77,7 @@ function getArtists() {
     <PageHeader />
 
     <div className={Styles['show-section']}>
-      <SectionPart
+      <SectionPartition
            width={partWidth()}
            text='Popular Releases'
            labelBool={true}
@@ -95,7 +95,7 @@ function getArtists() {
     </div>
 
     <div className={Styles['show-section']}>
-      <SectionPart
+      <SectionPartition
           width={partWidth()}
           text='Popular Artists'
           labelBool={true}
