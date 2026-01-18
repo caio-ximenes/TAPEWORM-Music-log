@@ -27,7 +27,7 @@
         height: 100%;
         width: auto;
         border-radius: 5px;
-        display: flex;
+        display: var(--label);
         align-items: center;
         justify-content: center;
         text-wrap: nowrap;
@@ -36,6 +36,7 @@
         text-transform: uppercase;
         font-size: $font-size-title-md;
         padding: 0 2vw;
+        
 
 
 

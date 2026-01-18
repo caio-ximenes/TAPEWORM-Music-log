@@ -80,6 +80,7 @@ function getArtists() {
       <SectionPart
            width={partWidth()}
            text='Popular Releases'
+           labelBool={true}
       />
     
       <RollSection>
@@ -97,6 +98,7 @@ function getArtists() {
       <SectionPart
           width={partWidth()}
           text='Popular Artists'
+          labelBool={true}
       />
       <RollSection>
         {getAlbums().map((artist) => (
