@@ -29,42 +29,7 @@ function RollSection({children}) {
     <div className={Styles['roll-section']}>
         <div aria-label='arrow left' className={Styles['roll-section__arrow-left']} onClick={handleScrollLeft}></div>
         <div className={Styles['roll-section__container']} ref={containerRef}>
-          <AlbumCard
-          imgSrc='https://picsum.photos/200'
-          albumName='Album 1'
-          artistName='Artist 1'
-          />
-          <AlbumCard
-          imgSrc='https://picsum.photos/200'
-          albumName='Album 1'
-          artistName='Artist 1'
-          />
-          <AlbumCard
-          imgSrc='https://picsum.photos/200'
-          albumName='Album 1'
-          artistName='Artist 1'
-          />
-          <AlbumCard
-          imgSrc='https://picsum.photos/200'
-          albumName='Album 1'
-          artistName='Artist 1'
-          />
-          <AlbumCard
-          imgSrc='https://picsum.photos/200'
-          albumName='Album 1'
-          artistName='Artist 1'
-          />
-          <AlbumCard
-          imgSrc='https://picsum.photos/200'
-          albumName='Album 1'
-          artistName='Artist 1'
-          />
-          <AlbumCard
-          imgSrc='https://picsum.photos/200'
-          albumName='Album 1'
-          artistName='Artist 1'
-          />
-
+          {children}
         </div>
         <div aria-label='arrow right' className={Styles['roll-section__arrow-right']} onClick={handleScrollRight}></div>
     </div>

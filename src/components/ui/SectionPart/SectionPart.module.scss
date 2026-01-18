@@ -1,13 +1,20 @@
 @import '../../../styles/variables.scss';
 
+
+
+
+
 .section-part{
-    width:100%;
+    width:var(--section-part-width);
     height: 4vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     position: relative;
+
+    
+
 
     &__first-line{
         background-color: $cor-primaria;
@@ -23,6 +30,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-wrap: nowrap;
         color: $text-color-light;
         font-family: $fonte-titulos-menores;
         text-transform: uppercase;
@@ -48,7 +56,7 @@
         background-color: $cor-primaria;
         border-radius: 50%;
         clip-path: circle();
-        z-index: 10;
+        z-index: 100;
         position: absolute;
         right: 0;
     }

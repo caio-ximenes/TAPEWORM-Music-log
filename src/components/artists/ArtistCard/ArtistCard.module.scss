@@ -1,13 +1,14 @@
 @import '../../../styles/variables.scss';
 
 .artist-card{
-    width: 200px;
+    width: 140px;
     aspect-ratio: 1/1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1vh;
+    padding-bottom: 1vh;
     
     
    
@@ -19,6 +20,7 @@
     
     &__image{
         clip-path: circle();
+        width: 100%;
 
     
 
@@ -28,7 +30,8 @@
         font-family: $card-text-font;
         font-size: $card-text-font-size-lg;
         color: $cor-primaria;
-        
+        text-align: center;
+        height: 30%;
     }
 
 }
