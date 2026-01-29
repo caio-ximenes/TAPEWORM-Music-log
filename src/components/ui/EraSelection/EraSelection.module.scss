@@ -1,0 +1,175 @@
+@import '../../../styles/variables.scss';
+
+// Medidas rápidas de edição
+$era-selection-width:40vw;
+$era-selection-height:10vh;
+$era-selection-border-radius:1em;
+$era-selection-border:0.1em;
+$margin-items: -$era-selection-border;
+
+
+
+.era-selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: $era-selection-height;
+    width: $era-selection-width;
+    gap: 12%;
+    
+
+    
+    &__title{
+        display: flex;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;;
+        text-wrap: nowrap;
+        font-family:$fonte-titulos;
+        font-weight: $font-weight-semibold;
+        font-size: clamp($font-size-smallest, 1vw, $font-size-title-lg);
+        width: 18%;
+        padding: 2% 3%;
+        height: 40%;
+        border-radius:20em;
+        color: $cor-secundaria;
+        background-color:$cor-primaria;
+        
+
+    }
+
+
+    &__selector{
+    display: flex;
+    flex-direction: row;
+    width: $era-selection-width;
+    height:50%;
+    border: $era-selection-border solid $cor-primaria;
+    border-radius: $era-selection-border-radius;
+    background-color: transparent;
+
+   
+
+
+    &__prev{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: calc($era-selection-width*0.1);
+        border-bottom-left-radius: calc($era-selection-border-radius*0.8);
+        border-top-left-radius: calc($era-selection-border-radius*0.8);
+        border-right: $era-selection-border solid $cor-primaria;
+        
+        &:hover{
+            cursor: pointer;
+            
+        }
+
+        &__icon{
+            
+            width: auto;
+            height: 75%;
+            aspect-ratio: 1/1;
+            background-color: $cor-primaria;
+           -webkit-mask-image: $arrow-prev-small-icon;
+            mask-image: $arrow-prev-small-icon;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            
+            &:hover{
+                cursor: pointer;
+                height:85%;
+            }
+
+        }
+        
+    }
+
+    &__eras{
+        flex: 1;
+        margin-left: $margin-items;
+        display: flex;
+        flex-direction: row;
+        color: $cor-primaria;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        > * {
+            flex-shrink: 0;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        &__item{
+            display: flex;
+            align-items: center;
+            justify-content: center;;
+            padding: 0 5%;
+            height: 100%;
+            width: 10%;
+            border-left: $era-selection-border solid $cor-primaria;
+            border-right:$era-selection-border solid $cor-primaria;
+            margin-left: $margin-items;
+            font-family: $fonte-titulos-menores;
+            font-size: clamp($font-size-smallest, 1vw, $font-size-title-lg);
+            
+            
+
+            &:hover{
+                border: calc($era-selection-border*2) solid $cor-primaria;
+                border-left: calc($era-selection-border*2) solid $cor-primaria;
+                border-right: calc($era-selection-border*2) solid $cor-primaria;
+                color: $cor-primaria;
+                cursor: pointer;
+                
+            }
+            
+        }
+    }
+
+
+
+    &__next{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: calc($era-selection-width*0.1);
+        border-bottom-right-radius: calc($era-selection-border-radius*0.8);
+        border-top-right-radius: calc($era-selection-border-radius*0.8);
+        border-left: $era-selection-border solid $cor-primaria;
+        margin-left: $margin-items;
+        
+        
+        
+
+        &__icon{
+            
+            width: auto;
+            height: 75%;
+            aspect-ratio: 1/1;
+            background-color: $cor-primaria;
+            -webkit-mask-image: $arrow-next-small-icon;
+            mask-image: $arrow-next-small-icon;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+
+            &:hover{
+                cursor: pointer;
+                height:85%;
+            }
+        }
+        
+    }
+
+
+}
+}

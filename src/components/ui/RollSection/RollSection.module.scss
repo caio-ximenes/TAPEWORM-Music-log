@@ -15,8 +15,8 @@
         width: 2vw;
         background-color:$cor-primaria;
         aspect-ratio: 1/1;
-        -webkit-mask-image: $arrow-left-icon;
-            mask-image: $arrow-left-icon;
+        -webkit-mask-image: $arrow-square-left-icon;
+            mask-image: $arrow-square-left-icon;
             mask-repeat: no-repeat;
             mask-size: contain;
         cursor: pointer;
@@ -47,8 +47,8 @@
         width: 2vw;
         background-color:$cor-primaria;
         aspect-ratio: 1/1;
-        -webkit-mask-image: $arrow-right-icon;
-            mask-image: $arrow-right-icon;
+        -webkit-mask-image: $arrow-square-right-icon;
+            mask-image: $arrow-square-right-icon;
             mask-repeat: no-repeat;
             mask-size: contain;
         cursor: pointer;
