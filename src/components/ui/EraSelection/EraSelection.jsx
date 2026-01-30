@@ -64,8 +64,8 @@ function EraSelection({ onClick }) {
             <div
               key={era}
               className={Styles["era-selection__selector__eras__item"]}
-              onClick={onClick}
-            >
+              onClick={() => onClick(era)}
+            > 
               {era}
             </div>
           ))}
