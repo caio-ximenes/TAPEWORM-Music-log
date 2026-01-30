@@ -13,12 +13,12 @@ function SectionPartition({text,width,labelBool}) {
 
 
   return (
-    <div className={Styles['section-part']} style={SectionPartition}>
+    <hgroup className={Styles['section-part']} style={SectionPartition}>
         <div className={Styles['section-part__first-line']} ></div>
-        <div className={Styles['section-part__text']} style={label}>{text}</div>
+        <h2 className={Styles['section-part__text']} style={label}>{text}</h2>
         <div className={Styles['section-part__second-line']}></div>
         <div className={Styles['section-part__circle']}></div>
-    </div>
+    </hgroup>
   )
 }
 

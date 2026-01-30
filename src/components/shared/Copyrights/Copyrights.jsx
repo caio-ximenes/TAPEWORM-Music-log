@@ -3,7 +3,7 @@ import Styles from './Copyrights.module.scss'
 
 function Copyrights() {
   return (
-    <div className={Styles['copyrights']}>© Tapeworm. All rights reserved.</div>
+    <p className={Styles['copyrights']}>© Tapeworm. All rights reserved.</p>
   )
 }
 

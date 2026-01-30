@@ -26,13 +26,13 @@ function RollSection({children}) {
   }
 
   return (
-    <div className={Styles['roll-section']}>
-        <div aria-label='arrow left' className={Styles['roll-section__arrow-left']} onClick={handleScrollLeft}></div>
-        <div className={Styles['roll-section__container']} ref={containerRef}>
+    <section className={Styles['roll-section']}>
+        <button aria-label='arrow left' className={Styles['roll-section__arrow-left']} onClick={handleScrollLeft}></button>
+        <ul className={Styles['roll-section__container']} ref={containerRef}>
           {children}
-        </div>
-        <div aria-label='arrow right' className={Styles['roll-section__arrow-right']} onClick={handleScrollRight}></div>
-    </div>
+        </ul>
+        <button aria-label='arrow right' className={Styles['roll-section__arrow-right']} onClick={handleScrollRight}></button>
+    </section>
   )
 }
 
