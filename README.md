@@ -62,10 +62,6 @@ Follow these steps to set up the project locally.
 
    _Note: Check `package.json` if the start script differs (e.g., `npm start`)._
 
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
 
 ## 📄 License
 
