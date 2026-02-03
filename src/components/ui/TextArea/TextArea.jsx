@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import Styles from './TextArea.module.scss'
 
 
-function TextArea({text,sectionHeight}) {
+function TextArea({text}) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   // Initializing hooks for the expand feature
@@ -33,13 +33,13 @@ function TextArea({text,sectionHeight}) {
   // The element's height is determined by the main page's layout section
   return (
     <div className={Styles['container']} 
-    style={isExpanded ? {'height':'auto'} : {'height':'100%'}}>
+    style={isExpanded ? {'height':'auto'} : {'height':'100%'} }>
       <p 
         className={Styles['text-area']} 
         ref={textArea}
         style={{
-          ...(isExpanded ? allLines : numberOfLines),
-          ...(isExpanded ? {} : { 'padding-bottom': '30%' })
+          ...(isExpanded ? numberOfLines : allLines ),
+          ...(!isExpanded ? {'padding-bottom': '30%'} : {})
         }}
       >
         {text}
@@ -50,7 +50,9 @@ function TextArea({text,sectionHeight}) {
       >
         <button className={Styles['text-area__button']} onClick={() => setIsExpanded(!isExpanded)}>
           {isExpanded ? 'more' :'less' }
+          {console.log(isExpanded)}
         </button>
+        
       </div>
     </div>
   )
