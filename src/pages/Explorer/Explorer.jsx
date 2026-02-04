@@ -28,7 +28,7 @@ function Explorer() {
   }
 
   // Mock data function for albums
-  function getAlbums() {
+  function getReleases() {
     const albums = [
       {
         id: 1,
@@ -208,11 +208,11 @@ function Explorer() {
           <SectionPartition
             width={partWidth()}
             text="Popular Releases"
-            labelBool={true}
+             l={true}
           />
 
           <RollSection>
-            {getAlbums().map((album) => (
+            {getReleases().map((album) => (
               <AlbumCard
                 key={album.id}
                 imgSrc={album.imgSrc}
@@ -228,7 +228,7 @@ function Explorer() {
           <SectionPartition
             width={partWidth()} // Gets the next width in the cycle
             text="Popular Artists"
-            labelBool={true}
+             l={true}
           />
           <RollSection>
             {getArtists().map((artist) => (

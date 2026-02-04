@@ -1,12 +1,12 @@
 import React from "react";
 import Styles from "./SectionPartition.module.scss";
 
-function SectionPartition({ text, width, labelBool }) {
+function SectionPartition({ text, width}) {
   const SectionPartition = {
     "--section-part-width": width,
   };
 
-  const label = labelBool ? { "--label": "flex" } : { "--label": "none" };
+  const label = text ? { "--label": "flex" } : { "--label": "none" };
 
   return (
     

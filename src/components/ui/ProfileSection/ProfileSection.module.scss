@@ -1,0 +1,61 @@
+@import './../../../styles/variables.scss';
+
+
+
+
+.profile-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    gap:5%;
+    aspect-ratio: 2 / 1;
+ 
+    &__photo {
+        border-radius: 50%;
+        padding: 0.8%;
+        background-color: #000;
+        height: 90%
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        &__name {
+            font-family: $fonte-textos-menores;
+            font-weight: $font-weight-medium;
+            font-size: clamp($font-size-smallest, 1.5rem, $font-size-title-extra-lg);
+            color: $cor-primaria;  
+            
+
+        }
+
+        &__edit-button{
+            width: 60%;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            font-weight: $font-weight-semibold;
+            font-size: clamp($font-size-small, 2.2vmin, $font-size-title-md);
+            font-family: $fonte-titulos-menores; 
+            border-radius: 1vmin; 
+            background-color: $cor-primaria;
+            color: $cor-secundaria;
+            border: none;
+            box-shadow: none;
+
+            &:active {
+                opacity: 0.8;
+            }
+
+        }
+    }
+}
