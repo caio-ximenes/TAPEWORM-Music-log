@@ -1,0 +1,46 @@
+@import './../../../styles/variables.scss';
+
+.page-not-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20vh;
+    gap: 2vmin;
+
+    &__title{
+        font-family: $fonte-textos-menores;
+        font-size: clamp($font-size-smallest,5vmin, $font-size-title-lg);
+        color: $cor-primaria;
+
+    }
+
+    &__link{
+        color: $cor-primaria;
+        font-family: $fonte-textos-menores;
+        font-weight: $font-weight-semibold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vmin;
+        flex-direction: row;
+
+        &__arrow{
+            height: 2vmin;
+            aspect-ratio: 1 / 1;
+            background-color: $cor-primaria;
+            -webkit-mask-image: $back-left-icon;
+            mask-image: $back-left-icon;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+        }
+
+        &:hover{
+            text-decoration: underline;
+            transform: scale(1.1);
+            transition: all 0.1s ease;;
+        }
+    }
+}
