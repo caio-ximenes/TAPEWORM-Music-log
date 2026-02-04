@@ -11,6 +11,7 @@ function App() {
     const router = createBrowserRouter([
       {
         path:'/',
+        Component:Explorer,
         errorElement:<PageNotFound />
       },
       {
