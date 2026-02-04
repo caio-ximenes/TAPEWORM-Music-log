@@ -12,7 +12,10 @@ function ButtonsHeader({ buttons }) {
       */}
       {buttons.map((button) => (
         <li key={button.id} className={Styles["buttons-header__item"]}>
-          <button className={Styles["buttons-header__item__button"]}>
+          <button
+            className={Styles["buttons-header__item__button"]}
+            onClick={() => button.onclick(button.id)}
+          >
             {button.name}
           </button>
         </li>
