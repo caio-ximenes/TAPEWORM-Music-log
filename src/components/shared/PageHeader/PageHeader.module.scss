@@ -161,8 +161,8 @@
             &__link {
                 color: $cor-secundaria;
                 font-family: $link-font;
-                color: $link-color-primary;
                 font-size: clamp(1rem, 2.5vw, 1.3rem);
+                transition: all 0.2s ease;
 
                 &:hover {
                     color: $link-color-hover;
