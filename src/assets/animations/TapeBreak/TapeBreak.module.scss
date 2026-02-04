@@ -1,0 +1,63 @@
+.container {
+  position: relative;
+  width: 10%;
+  aspect-ratio: 1 / 1;
+}
+
+.half {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transform-origin: center right;
+}
+
+.half img {
+  width: 200%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ESQUERDA */
+.left {
+  left: 0;
+  transform-origin: right center;
+  clip-path: polygon(
+    0 0,
+    94% 0,
+    100% 12%,
+    92% 28%,
+    100% 45%,
+    92% 62%,
+    100% 78%,
+    94% 100%,
+    0 100%
+  );
+}
+
+.left img {
+  transform: translateX(0);
+}
+
+/* DIREITA */
+.right {
+  right: 0;
+  transform-origin: left center;
+  clip-path: polygon(
+    6% 0,
+    100% 0,
+    100% 100%,
+    6% 100%,
+    0 85%,
+    8% 70%,
+    0 55%,
+    8% 40%,
+    0 25%,
+    8% 10%
+  );
+}
+
+.right img {
+  transform: translateX(-50%);
+}
