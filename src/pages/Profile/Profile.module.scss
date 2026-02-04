@@ -1,102 +1,123 @@
-@import './../../styles/variables.scss';
+@import "./../../styles/variables.scss";
 
 .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4% 10%;
+  gap: 5vh;
+
+  &__main-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+  }
+
+  &__first-column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 4% 10%;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    gap: 10vmin;
+  }
 
-    &__main-data {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: start;
-        width: 100%;
+  &__second-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    gap: 10vmin;
+  }
+
+  &__profile-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 70%;
+  }
+
+  &__bio {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 10vh;
+    gap: 1vmin;
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    aspect-ratio: 2 / 1;
+  }
+
+  &__artists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 3 / 1;
+    gap: 8%;
+
+    &-header {
+      width: 90%;
+      display: flex;
     }
+  }
 
-    &__first-column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-        gap: 10vmin;
+  &__albums {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 8%;
+    aspect-ratio: 3 / 1;
+
+    &-header {
+      width: 90%;
+      display: flex;
     }
+  }
 
-    &__second-column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 55%;
-        gap:10vmin;
+  &__albums-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__user-lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: auto;
+
+    &__header {
+      width: 97%;
+      display: flex;
     }
-
-    &__profile-section {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: start;
-        width: 70%;
-        
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(8,1fr);
+      column-gap: 1.2vw;
+      row-gap: 5%;
+      width: 97%;
+      height: 100%;
+      padding: 5% 0;
     }
-
-    &__bio {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        min-height: 10vh;
-        gap: 1vmin;
-    }
-
-    &__stats {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        aspect-ratio: 2 / 1;
-    }
-
-    &__artists {
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        aspect-ratio: 3 / 1;
-        gap: 8%;
-
-        &-header{
-            width: 90%;
-            display: flex;
-        }
-    }
-
-    &__albums {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        gap: 8%;
-        aspect-ratio: 3 / 1;
-
-
-        &-header{
-            width: 90%;
-            display: flex;
-        }
-    }
-
-    &__albums-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
+  }
 }
