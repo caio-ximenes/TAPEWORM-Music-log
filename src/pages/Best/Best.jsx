@@ -4,6 +4,7 @@ import SectionTitle from "../../components/ui/SectionTitle/SectionTitle";
 import EraSelection from "../../components/ui/EraSelection/EraSelection";
 import AlbumListItem from "../../components/ui/AlbumListItem/AlbumListItem";
 import PageHeader from "../../components/shared/PageHeader/PageHeader";
+import Copyrights from "../../components/shared/Copyrights/Copyrights";
 
 function Best() {
   const [eraSelected, setEraSelected] = useState(null);
@@ -111,6 +112,7 @@ function Best() {
           
         </section>
       </main>
+      <Copyrights />
     </>
   );
 }

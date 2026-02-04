@@ -2,6 +2,8 @@ import React from 'react'
 import { Link,useNavigate } from 'react-router-dom'
 import TapeBreak from '../../../assets/animations/TapeBreak/TapeBreak';
 import Styles from './PageNotFound.module.scss'
+import Copyrights from '../../../components/shared/Copyrights/Copyrights';
+
 
 function PageNotFound() {
 const navigate = useNavigate();
@@ -18,6 +20,8 @@ const navigate = useNavigate();
       </Link>
       <TapeBreak />
     </main>
+    <Copyrights />
+    
   </>
   )
 }

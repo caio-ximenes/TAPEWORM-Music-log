@@ -10,6 +10,8 @@ import ArtistCard from "../../components/artists/ArtistCard/ArtistCard";
 import UserData from "../../components/ui/UserData/UserData";
 import ButtonsHeader from "../../components/ui/ButtonsHeader/ButtonsHeader";
 import RealeaseIcon from "../../components/albuns/RealeaseIcon/RealeaseIcon";
+import Copyrights from "../../components/shared/Copyrights/Copyrights";
+
 
 function Profile() {
   const [userLists,setUserLists] = useState([]);
@@ -388,6 +390,7 @@ function Profile() {
           
         </section>
       </main>
+      <Copyrights />
     </>
   );
 }
