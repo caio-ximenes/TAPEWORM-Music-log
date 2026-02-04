@@ -1,7 +1,7 @@
 @import '../../../styles/variables.scss';
 
 .artist-card{
-    width: 140px;
+    height: 100%;
     aspect-ratio: 1/1;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     
    
     &:hover{
-        border: 1px $cor-primaria solid;
+        border: 0.1vmin $cor-primaria solid;
     }
     
         
@@ -28,7 +28,7 @@
 
     &__text{
         font-family: $card-text-font;
-        font-size: $card-text-font-size-lg;
+        font-size: clamp($font-size-small,1.8vmin,$font-size-title-md);
         color: $cor-primaria;
         text-align: center;
         height: 30%;

@@ -4,7 +4,7 @@
     .album-card {
         
         display: flex;
-        width: 140px;
+        height: 100%;
         aspect-ratio: 5 / 6 ;
         flex-direction: column;
         align-items: center;
@@ -13,7 +13,7 @@
         gap:1vh ;
 
         &:hover{
-            border: 1px solid $cor-primaria;
+            border: 0.1vmin $cor-primaria solid;
         }
 
 
@@ -22,6 +22,7 @@
                 width: 100%;
                 height: auto;
             }
+
         &__info {
             display: flex;
             flex-direction: column;
@@ -36,7 +37,7 @@
        
 
             &__title {
-                font-size:$card-text-font-size-lg;
+                font-size:clamp($font-size-small,1.8vmin,$font-size-title-md);
                 font-family: $card-text-font;
                 color: $cor-primaria;
                 width: 100%;
@@ -47,7 +48,7 @@
 
             &__artist {
                 width: 100%;
-                font-size: $card-text-font-size-sm;
+                font-size: clamp($font-size-small,1.3vmin,$font-size-title-md);
                 color: $cor-quaternaria;
                 font-family: $card-text-font;
                 font-weight: $font-weight-light;

@@ -39,7 +39,7 @@ function TextArea({text}) {
         ref={textArea}
         style={{
           ...(isExpanded ? numberOfLines : allLines ),
-          ...(!isExpanded ? {'padding-bottom': '30%'} : {})
+          ...(!isExpanded ? {'padding-bottom': '20%'} : {})
         }}
       >
         {text}
