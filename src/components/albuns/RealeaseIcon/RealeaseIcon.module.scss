@@ -1,0 +1,56 @@
+@import "../../../styles/variables.scss";
+
+.realease-icon {
+  &:hover {
+      transform: scale(1.1);
+    }
+  &__image-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: clamp(10vmin, 100%, 30vmin);
+    cursor: pointer;
+
+    
+
+    &__image {
+      border-radius: 1vmin;
+      width: 100%;
+    }
+
+    &__rate {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      aspect-ratio: 1 / 1;
+      width: clamp(1vmin, 22%, 5vmin);
+      background-color: $cor-secundaria;
+      margin-bottom: 2%;
+      margin-right: 2%;
+      border-radius: 1vmin;
+      font-size: clamp($font-size-small, 5vmin, $font-size-title-lg);
+      font-family: $fonte-titulos-menores;
+      padding: 0.6vmin 0;
+    }
+    &__rate-line{
+        background: linear-gradient(90deg, $cor-primaria var(--rate-level, 0%), $cor-quaternaria var(--rate-fill, 0%));
+        width: 70%;
+        aspect-ratio: 10 / 1.2;
+        border-radius: 0.7rem;
+    }
+  }
+
+  &__name {
+    font-family: $fonte-textos-menores;
+    font-size: clamp($font-size-small, 1.8vmin, $font-size-title-lg);
+    font-weight: $font-weight-bold;
+;
+  }
+}
