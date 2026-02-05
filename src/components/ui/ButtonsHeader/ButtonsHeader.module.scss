@@ -30,7 +30,7 @@
             text-align: center;
             color: $cor-secundaria;
             font-family: $fonte-botoes;
-            font-size: clamp($font-size-smallest, 1.8vmin, $font-size-title-md);
+            font-size: clamp($font-size-smallest, 2vmin, $font-size-title-md);
             cursor: pointer;
             transition: all 0.2s ease;
 

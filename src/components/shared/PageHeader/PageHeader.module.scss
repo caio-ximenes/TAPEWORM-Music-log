@@ -128,17 +128,17 @@
 
 
     .logo-container {
-        height: 18vh;
+        height: 26vh;
         width: 100%;
         display: flex;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding-top: 5vh;
+        padding-top: 0vh;
 
 
         &__logo {
-            max-width: 10vw;
+            max-width: 15vw;
 
         }
     }
@@ -161,7 +161,7 @@
             &__link {
                 color: $cor-secundaria;
                 font-family: $link-font;
-                font-size: clamp(1rem, 2.5vw, 1.3rem);
+                font-size: clamp(1rem, 1.2vw, 1.3rem);
                 transition: all 0.2s ease;
 
                 &:hover {
