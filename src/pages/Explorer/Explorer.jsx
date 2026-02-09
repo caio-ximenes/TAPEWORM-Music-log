@@ -11,7 +11,7 @@ function Explorer() {
   // Ref to track the current index for partition width cycling without re-renders
   const idPart = useRef(0);
   // Array of possible widths for the section partition
-  const partitionSizes = ["10%", "20%", "30%", "40%"];
+  const partitionSizes = ["30%", "40%", "50%", "60%"];
 
   // Function to determine the width of the next partition
   // It cycles through the 'partitionSizes' array based on 'idPart'
@@ -20,7 +20,11 @@ function Explorer() {
       const index = idPart.current % partitionSizes.length;
       const width = partitionSizes[index];
       // Increment the counter for the next call
-      idPart.current += 1;
+      const ultimo = partitionSizes.length - 1;
+      if (idPart.current === ultimo) idPart.current = 0;
+      else{
+        idPart.current += 1;
+      }
       return width;
     } else {
       throw new Error("invalid size");
