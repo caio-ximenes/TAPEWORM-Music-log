@@ -204,7 +204,7 @@ function Explorer() {
 
   return (
     <>
-      <PageHeader />
+    
       <main>
         {/* Albums Section */}
         <div className={Styles["show-section"]}>
@@ -246,7 +246,7 @@ function Explorer() {
         </div>
       </main>
 
-      <Copyrights />
+     
     </>
   );
 }

@@ -51,6 +51,19 @@
     font-family: $fonte-textos-menores;
     font-size: clamp($font-size-small, 1.8vmin, $font-size-title-lg);
     font-weight: $font-weight-bold;
-;
+
+  }
+  &__stats{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    &__item{
+    &__spins{}
+
+      &__likes{}
+      &__favorites{}
+    }
   }
 }

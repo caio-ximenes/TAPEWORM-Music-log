@@ -119,8 +119,9 @@ $margin-items: -$era-selection-border;
             border-left: $era-selection-border solid $cor-primaria;
             border-right:$era-selection-border solid $cor-primaria;
             margin-left: $margin-items;
-            font-family: $fonte-titulos-menores;
+            font-family: $fonte-titulos;
             font-size: clamp($font-size-smallest, 1vw, $font-size-title-lg);
+            font-weight: $font-weight-semibold;
             
             
 
