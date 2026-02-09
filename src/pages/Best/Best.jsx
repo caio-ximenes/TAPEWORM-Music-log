@@ -103,7 +103,6 @@ function Best() {
 
   return (
     <>
-      <PageHeader />
       <main className={Styles["main"]}>
         <EraSelection onClick={setEraSelected} />
         <section className={Styles["album-section"]}>
@@ -112,7 +111,7 @@ function Best() {
           
         </section>
       </main>
-      <Copyrights />
+      
     </>
   );
 }

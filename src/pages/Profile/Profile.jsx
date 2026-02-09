@@ -317,7 +317,6 @@ function Profile() {
 
   return (
     <>
-      <PageHeader />
       <main className={Styles["profile"]}>
         <div className={Styles["profile__main-data"]}>
           <section className={Styles["profile__first-column"]}>
@@ -390,7 +389,7 @@ function Profile() {
           
         </section>
       </main>
-      <Copyrights />
+      
     </>
   );
 }

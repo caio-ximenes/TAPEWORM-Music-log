@@ -4,6 +4,8 @@ import Explorer from './pages/Explorer/Explorer'
 import PageNotFound from './pages/Errors/404/PageNotFound'
 import Best from './pages/Best/Best'
 import Profile from './pages/Profile/Profile'
+import Template from './pages/Template/Template'
+import RealeasePage,{realeaseLoader} from './pages/RealeasePage/RealeasePage'
 
 
 
@@ -11,20 +13,28 @@ function App() {
     const router = createBrowserRouter([
       {
         path:'/',
-        Component:Explorer,
-        errorElement:<PageNotFound />
-      },
-      {
-        path:'/explore',
+        Component:Template,
+        errorElement:<PageNotFound />,
+        children:[
+          {
+        path:'explore',
         Component:Explorer
       },
       {
-        path:'/best',
+        path:'best',
         Component:Best
       },
       {
-        path:'/profile',
+        path:'profile',
         Component:Profile
+      }
+          
+        ]
+      },
+      {
+        path:'/:release',
+        Component:RealeasePage,
+        loader:realeaseLoader
       }
     
     ])
