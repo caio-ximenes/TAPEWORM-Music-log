@@ -6,10 +6,12 @@ import Best from './pages/Best/Best'
 import Profile from './pages/Profile/Profile'
 import Template from './pages/Template/Template'
 import RealeasePage,{realeaseLoader} from './pages/RealeasePage/RealeasePage'
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-
+const queryClient = new QueryClient();
 
 function App() {
+  
     const router = createBrowserRouter([
       {
         path:'/',
@@ -27,20 +29,25 @@ function App() {
       {
         path:'profile',
         Component:Profile
+      },
+      {
+        path:'albums',
+        children:[{
+        path:':release',
+        Component:RealeasePage,
+        loader:realeaseLoader
+      }]
       }
           
         ]
-      },
-      {
-        path:'/:release',
-        Component:RealeasePage,
-        loader:realeaseLoader
       }
     
     ])
 
   return (
-    <RouterProvider router={router} />
+    <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+    </QueryClientProvider>
   )
 }
 
