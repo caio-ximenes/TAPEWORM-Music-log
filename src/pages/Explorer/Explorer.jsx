@@ -218,10 +218,11 @@ function Explorer() {
           <RollSection>
             {getReleases().map((album) => (
               <AlbumCard
-                key={album.id}
+                albumId={album.id}
                 imgSrc={album.imgSrc}
                 albumName={album.albumName}
                 artistName={album.artistName}
+                key={album.id}
               />
             ))}
           </RollSection>
