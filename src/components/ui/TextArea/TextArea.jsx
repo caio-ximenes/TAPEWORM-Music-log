@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import Styles from './TextArea.module.scss'
 
 
-function TextArea({text}) {
+function TextArea({text,lines}) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   // Initializing hooks for the expand feature
@@ -10,7 +10,7 @@ function TextArea({text}) {
   // Reference to the text area element
   const textArea = useRef(null);
   // Variable to limit the number of lines
-  const numberOfLines = {'--number-of-lines': 8}
+  const numberOfLines = {'--number-of-lines': lines}
   // Variable to show all lines
   const allLines = {'--number-of-lines': 'unset'}
   
