@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Styles from './TextArea.module.scss'
 
+// The component is a text area that can be expanded to show all text
+// If you set the lines prop to 0, it will show all text without the expand button, and the container will adjust to the text height
+
 
 function TextArea({text,lines}) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -14,6 +17,7 @@ function TextArea({text,lines}) {
   // Variable to show all lines
   const allLines = {'--number-of-lines': 'unset'}
   
+  const linesLimit = lines == 0;
 
 
   useEffect(() => {
@@ -21,7 +25,7 @@ function TextArea({text,lines}) {
     if (textArea.current) {
       const hasOverflow = textArea.current.scrollHeight > textArea.current.offsetHeight;
       // Sets the state to determine the expansion style
-      setIsExpanded(!hasOverflow);
+      setIsExpanded(!hasOverflow && !linesLimit);
       
     }
   }, [text]); 
@@ -40,17 +44,17 @@ function TextArea({text,lines}) {
         style={{
           ...(isExpanded ? numberOfLines : allLines ),
           ...(!isExpanded ? {'padding-bottom': '20%'} : {})
+          
         }}
       >
         {text}
       </p>
-      <div 
-        className={Styles['text-area__button-container']}
-        style={isExpanded ? {} : {'background': 'transparent'}}
-      >
-        <button className={Styles['text-area__button']} onClick={() => setIsExpanded(!isExpanded)}>
+      <div className={Styles['text-area__button-container']} style={{
+        backgroundColor: isExpanded ? undefined : 'transparent',
+        display: linesLimit ? 'none' : undefined,
+      }}>
+        <button className={Styles['text-area__button']} onClick={() => setIsExpanded(!isExpanded)} style={linesLimit ? {'display':'none'}: {}}>
           {isExpanded ? 'more' :'less' }
-          {console.log(isExpanded)}
         </button>
         
       </div>
