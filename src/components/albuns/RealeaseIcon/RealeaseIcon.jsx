@@ -10,18 +10,18 @@ function RealeaseIcon({
   rate = null,
   stats = null,
   onClick = null,
-  play = "play",
+  play = null,
 }) {
   const rateLevel = {
     "--rate-level": `${rate}%`,
   };
 
   const hover = onClick
-    ? null
-    : {
+    ? {
         "transform": "none",
         "cursor": "default",
-      };
+      }
+    : null;
 
 
       const buttonColor = useImageContrast(img);
@@ -43,7 +43,7 @@ function RealeaseIcon({
           alt={name}
           className={Styles["realease-icon__image-container__image"]}
         />
-        <div className={Styles["realease-icon__image-container__play"]} style={{ backgroundColor: buttonColor }}></div>
+        <div className={Styles["realease-icon__image-container__play"]} style={{ backgroundColor: buttonColor, display: play ? "block" : "none"}}></div>
         {rate && (
           <div className={Styles["realease-icon__image-container__rate"]}>
             {rate}
