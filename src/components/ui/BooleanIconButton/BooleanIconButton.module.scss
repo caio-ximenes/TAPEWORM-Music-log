@@ -1,0 +1,35 @@
+@import '../../../styles/variables.scss';
+
+.boolean-icon-button {
+    all: unset;
+    height: 100%;
+    aspect-ratio: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+
+  &__icon {
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    background-color: black;
+  }
+
+  @each $name, $url in $button-icons {
+    &__icon--#{$name} {
+      -webkit-mask-image: $url;
+      mask-image: $url;
+      mask-repeat: no-repeat;
+      mask-size: contain;
+    }
+  }
+
+  &__name{
+    font-size: clamp($font-size-small, 3vmin, $font-size-title-lg);
+    font-family: $fonte-textos-menores;
+    color: $cor-primaria;
+    font-weight: $font-weight-medium;
+  }
+}
+
