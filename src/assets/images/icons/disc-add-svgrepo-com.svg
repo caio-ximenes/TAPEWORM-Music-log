@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    
+    <title>Disc-add</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+</defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Disc-add" sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)" stroke-width="2" stroke="#58595B">
+            <g id="Group" sketch:type="MSShapeGroup">
+                <path d="M49.215,56.088 C44.101,59.807 37.807,62 31,62 C13.879,62 0,48.121 0,31 C0,13.879 13.879,0 31,0 C48.121,0 62,13.879 62,31 C62,37.736 59.852,43.971 56.203,49.056" id="Shape">
+</path>
+                <circle id="Oval" cx="31" cy="31" r="9">
+</circle>
+                <circle id="Oval" cx="31" cy="31" r="3">
+</circle>
+                <path d="M31,55 C17.745,55 7,44.255 7,31" id="Shape">
+</path>
+                <path d="M31,7 C44.255,7 55,17.745 55,31" id="Shape">
+</path>
+                <path d="M31,49 C21.059,49 13,40.94 13,31" id="Shape">
+</path>
+                <path d="M31,13 C40.941,13 49,21.059 49,31" id="Shape">
+</path>
+            </g>
+            <path d="M56.093,60.916 L56.093,55.932 L60.961,55.933 L60.961,49.961 L56.013,49.961 L56.013,45.013 L50.042,45.013 L50.042,49.961 L45.093,49.961 L45.093,55.932 L49.961,55.933 L49.961,60.916 L56.093,60.916 Z" id="Shape" sketch:type="MSShapeGroup">
+</path>
+        </g>
+    </g>
+</svg>
