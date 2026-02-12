@@ -1,23 +1,43 @@
 @import "../../../styles/variables.scss";
 
 .realease-icon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vmin;
+  cursor: pointer;
   &:hover {
-      transform: scale(1.1);
-    }
+    transform: scale(1.1);
+  }
   &__image-container {
     display: flex;
     position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: clamp(10vmin, 100%, 30vmin);
-    cursor: pointer;
-
-    
+    width: 100%;
 
     &__image {
       border-radius: 1vmin;
       width: 100%;
+    }
+    &__play {
+      @include iconMask($play-full);
+      position: absolute;
+      width: 30%;
+      aspect-ratio: 1 / 1;
+      z-index: 10;
+      right: 0;
+      bottom: 0;
+      margin-bottom: 2%;
+      margin-right: 2%;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
 
     &__rate {
@@ -39,11 +59,15 @@
       font-family: $fonte-titulos-menores;
       padding: 0.6vmin 0;
     }
-    &__rate-line{
-        background: linear-gradient(90deg, $cor-primaria var(--rate-level, 0%), $cor-quaternaria var(--rate-fill, 0%));
-        width: 70%;
-        aspect-ratio: 10 / 1.2;
-        border-radius: 0.7rem;
+    &__rate-line {
+      background: linear-gradient(
+        90deg,
+        $cor-primaria var(--rate-level, 0%),
+        $cor-quaternaria var(--rate-fill, 0%)
+      );
+      width: 70%;
+      aspect-ratio: 10 / 1.2;
+      border-radius: 0.7rem;
     }
   }
 
@@ -51,19 +75,46 @@
     font-family: $fonte-textos-menores;
     font-size: clamp($font-size-small, 1.8vmin, $font-size-title-lg);
     font-weight: $font-weight-bold;
-
   }
-  &__stats{
+  &__stats {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    &__item{
-    &__spins{}
+    height: 4vh;
+    &__item {
+      height: 100%;
+      width: 35%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-size: clamp($font-size-small, 1.8vmin, $font-size-title-lg);
+      font-family: $fonte-textos-menores;
+      color: $cor-primaria;
+      font-weight: $font-weight-medium;
+      gap: 5%;
 
-      &__likes{}
-      &__favorites{}
+      &__spins {
+        @include iconMask($spin-full);
+        aspect-ratio: 1 / 1;
+        height: 100%;
+        background-color: $cor-primaria;
+      }
+
+      &__likes {
+        @include iconMask($like-full);
+        aspect-ratio: 1 / 1;
+        height: 100%;
+        background-color: black;
+      }
+      &__favorites {
+        @include iconMask($fav-full);
+        aspect-ratio: 1 / 1;
+        height: 100%;
+        background-color: black;
+      }
     }
   }
 }

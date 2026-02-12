@@ -1,12 +1,9 @@
 // Aqui ficarão as paletas de cores e fontes, que seguiremos no uso do projeto.
 
-
 //----------------------------------------------//
 // TODAS AS FONTES E CORES DE CADA ELEMENTO DEVEM SER ADICIONADAS AQUI
 // PARA GARANTIR A UNIFORMIDADE DO PROJETO.
 //----------------------------------------------//
-
-
 
 // --- Tamanhos de Fonte ---
 $font-size-title-extra-lg: 32px; // Títulos grandes"
@@ -14,44 +11,42 @@ $font-size-title-lg: 26px; // Títulos grandes"
 $font-size-title-md: 20px; // Títulos médios"
 $font-size-medium: 14px; // Texto principal, "Texto corrido normal"
 $font-size-small: 10px; // Texto pequeno, como "Digite seu nome completo"
-$font-size-smallest:8px;
+$font-size-smallest: 8px;
 
 // --- Pesos da Fonte (Font Weights) ---
-$font-weight-light: 200; 
-$font-weight-regular: 400; 
-$font-weight-medium: 500; 
+$font-weight-light: 200;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
 $font-weight-semibold: 600;
-$font-weight-bold: 800; 
+$font-weight-bold: 800;
 
 // Paleta de cores - nomes genericos
 $cor-preta: #000000;
 $cor-cinza: #333333;
 $cor-cinza-claro: #6b6b6b;
-$cor-branca: #FFFFFF;
-$cor-vermelha: #FF0000;
+$cor-branca: #ffffff;
+$cor-vermelha: #ff0000;
 $cor-vermelha-claro: #ff3f3f;
-$cor-vermelha-erro:#ca0300;
+$cor-vermelha-erro: #ca0300;
 
 // Fontes
-$fonte-titulos: 'Rubik', cursive;
-$fonte-titulos-medios: 'Roboto', cursive;
-$fonte-titulos-menores: 'Bebas Neue', cursive;
-$fonte-textos-menores: 'Roboto Mono', monospace;
-$fonte-botoes: 'Bebas Neue', cursive;
-
+$fonte-titulos: "Rubik", cursive;
+$fonte-titulos-medios: "Roboto", cursive;
+$fonte-titulos-menores: "Bebas Neue", cursive;
+$fonte-textos-menores: "Roboto Mono", monospace;
+$fonte-botoes: "Bebas Neue", cursive;
 
 // Palheta indentidade visual Tapeworm Music Log
-$cor-primaria:$cor-preta;
+$cor-primaria: $cor-preta;
 $cor-secundaria: $cor-branca;
-$cor-terciaria:$cor-cinza;
-$cor-quaternaria:$cor-cinza-claro;
-$cor-alerta:$cor-vermelha;
+$cor-terciaria: $cor-cinza;
+$cor-quaternaria: $cor-cinza-claro;
+$cor-alerta: $cor-vermelha;
 
 // --- Cores de Texto ---
 $text-color-primary: $cor-primaria; // Para a maioria dos textos sobre fundos claros
 $text-color-secondary: $cor-terciaria; // Para textos de menor importância, placeholders
 $text-color-light: $cor-secundaria; // Para textos sobre fundos escuros
-
 
 // --- Cores de Fundo ---
 $background-color-page: $cor-secundaria;
@@ -66,11 +61,8 @@ $button-primary-hover: $cor-terciaria;
 
 $button-primary-font: $fonte-botoes;
 
-
-
-
 //Botão de perigo
-$button-danger-background:$cor-alerta;
+$button-danger-background: $cor-alerta;
 $button-danger-text: $cor-branca;
 $button-danger-hover: $cor-vermelha-claro;
 
@@ -97,19 +89,12 @@ $header-background-color: $cor-primaria;
 $header-text-color: $cor-secundaria;
 $header-font: $fonte-titulos-menores;
 
-
 // --- Estilos de Card ---
-$card-text-font:$fonte-textos-menores;
-$card-text-font-size-lg:$font-size-medium;
-$card-text-font-size-sm:$font-size-small;
-$card-text-sm-color:$cor-quaternaria;
-$card-text-lg-color:$cor-primaria;
-
-
-
-
-
-
+$card-text-font: $fonte-textos-menores;
+$card-text-font-size-lg: $font-size-medium;
+$card-text-font-size-sm: $font-size-small;
+$card-text-sm-color: $cor-quaternaria;
+$card-text-lg-color: $cor-primaria;
 
 // TOKENS DE UNIDADES (Espaçamento, Bordas, etc.)
 
@@ -119,22 +104,40 @@ $border-color: $cor-primaria;
 
 $padding-inputs: 8px 10px;
 
-
-
 //Icons
 
-$close-icon: url('../assets/images/icons/close-svgrepo-com.svg');
-$menu-icon:url('../assets/images/icons/menu-svgrepo-com.svg');
-$logo-icon:url('../assets/images/icons/tapeworm-logo.svg');
-$arrow-square-left-icon:url('../assets/images/icons/arrow-square-left.svg');
-$arrow-square-right-icon:url('../assets/images/icons/arrow-square-right.svg');
-$arrow-prev-small-icon:url('../assets/images/icons/arrow-prev-small.svg');
-$arrow-next-small-icon:url('../assets/images/icons/arrow-next-small.svg');
-$back-left-icon:url('../assets/images/icons/back-left.svg');
+$close-icon: url("../assets/images/icons/close-svgrepo-com.svg");
+$menu-icon: url("../assets/images/icons/menu-svgrepo-com.svg");
+$logo-icon: url("../assets/images/icons/tapeworm-logo.svg");
+$arrow-square-left-icon: url("../assets/images/icons/arrow-square-left.svg");
+$arrow-square-right-icon: url("../assets/images/icons/arrow-square-right.svg");
+$arrow-prev-small-icon: url("../assets/images/icons/arrow-prev-small.svg");
+$arrow-next-small-icon: url("../assets/images/icons/arrow-next-small.svg");
+$back-left-icon: url("../assets/images/icons/back-left.svg");
 
-$disc-empty:url('../assets/images/icons/disc-svgrepo-com.svg');
-$disc-full:url('../assets/images/icons/disc-full-svgrepo-com.svg');
-$heart-empty:url('../assets/images/icons/heart-like-svgrepo-com.svg');
-$heart-full:url('../assets/images/icons/heart-like-full-svgrepo-com.svg');
-$crown-empty:url('../assets/images/icons/crown-simple-bold-svgrepo-com.svg');
-$crown-full:url('../assets/images/icons/crown-simple-fill-svgrepo-com.svg');
+$spin-empty: url("../assets/images/icons/disc-svgrepo-com.svg");
+$spin-full: url("../assets/images/icons/disc-fill-svgrepo-com.svg");
+$spinlist-add: url("../assets/images/icons/disc-add-svgrepo-com.svg");
+$like-empty: url("../assets/images/icons/heart-like-svgrepo-com.svg");
+$like-full: url("../assets/images/icons/heart-like-full-svgrepo-com.svg");
+$fav-empty: url("../assets/images/icons/crown-simple-bold-svgrepo-com.svg");
+$fav-full: url("../assets/images/icons/crown-simple-fill-svgrepo-com.svg");
+$play-full: url("../assets/images/icons/play-circle-svgrepo-com.svg");
+
+$button-icons: (
+  like-empty: url("../assets/images/icons/heart-like-svgrepo-com.svg"),
+  like-full: url("../assets/images/icons/heart-like-full-svgrepo-com.svg"),
+  spin-empty: url("../assets/images/icons/disc-svgrepo-com.svg"),
+  spin-full: url("../assets/images/icons/disc-fill-svgrepo-com.svg"),
+  fav-empty: url("../assets/images/icons/crown-simple-bold-svgrepo-com.svg"),
+  fav-full: url("../assets/images/icons/crown-simple-fill-svgrepo-com.svg"),
+  spinlist-empty: url("../assets/images/icons/disc-add-svgrepo-com.svg"),
+);
+
+// Function to use the svg icon as a mask
+@mixin iconMask($name) {
+  -webkit-mask-image: $name;
+  mask-image: $name;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
