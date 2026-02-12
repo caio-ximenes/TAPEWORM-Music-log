@@ -6,6 +6,7 @@
 .header--mobile {
 
     &__menu {
+        @include iconMask($menu-icon);
         position: absolute;
         top: 7vh;
         left: 9vw;
@@ -13,10 +14,6 @@
         height: 10vw;
         cursor: pointer;
         background-color: $cor-primaria;
-        -webkit-mask-image: $menu-icon;
-            mask-image: $menu-icon;
-            mask-repeat: no-repeat;
-            mask-size: contain;
 
     
             
@@ -42,19 +39,18 @@
             }
 
         &__logo{
+            @include iconMask($logo-icon);
             width: 100%;
             aspect-ratio: 6 / 4;
             background-color:$cor-secundaria;
-            -webkit-mask-image: $logo-icon;
-            mask-image: $logo-icon;
-            mask-repeat: no-repeat;
-            mask-size: contain;
+            
 
 
         }
         
 
         &__close {
+            @include iconMask($close-icon);
             position: relative;
             top: 0;
             left: 25vw;
@@ -62,10 +58,6 @@
             height: 6vw;
             cursor: pointer;
             background-color: $cor-secundaria;
-            -webkit-mask-image: $close-icon;
-            mask-image: $close-icon;
-            mask-repeat: no-repeat;
-            mask-size: contain;
             
         }
 

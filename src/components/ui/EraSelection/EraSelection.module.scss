@@ -68,15 +68,11 @@ $margin-items: -$era-selection-border;
         }
 
         &__icon{
-            
+            @include iconMask($arrow-prev-small-icon);
             width: auto;
             height: 75%;
             aspect-ratio: 1/1;
             background-color: $cor-primaria;
-           -webkit-mask-image: $arrow-prev-small-icon;
-            mask-image: $arrow-prev-small-icon;
-            mask-repeat: no-repeat;
-            mask-size: contain;
             
             &:hover{
                 cursor: pointer;
@@ -154,15 +150,12 @@ $margin-items: -$era-selection-border;
         
 
         &__icon{
-            
+            @include iconMask($arrow-next-small-icon);
             width: auto;
             height: 75%;
             aspect-ratio: 1/1;
             background-color: $cor-primaria;
-            -webkit-mask-image: $arrow-next-small-icon;
-            mask-image: $arrow-next-small-icon;
-            mask-repeat: no-repeat;
-            mask-size: contain;
+            
 
             &:hover{
                 cursor: pointer;

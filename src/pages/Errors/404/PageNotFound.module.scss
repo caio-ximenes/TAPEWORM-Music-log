@@ -28,13 +28,10 @@
         flex-direction: row;
 
         &__arrow{
+            @include iconMask($back-left-icon);
             height: 2vmin;
             aspect-ratio: 1 / 1;
             background-color: $cor-primaria;
-            -webkit-mask-image: $back-left-icon;
-            mask-image: $back-left-icon;
-            mask-repeat: no-repeat;
-            mask-size: contain;
         }
 
         &:hover{
