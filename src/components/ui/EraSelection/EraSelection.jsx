@@ -45,7 +45,7 @@ function EraSelection({ onClick }) {
 
   return (
     <div className={Styles["era-selection"]}>
-      <h1 className={Styles["era-selection__title"]}>all time</h1>
+      <button className={Styles["era-selection__title"]} onClick={() => onClick(null)}>all time</button>
       <div className={Styles["era-selection__selector"]}>
         <div
           className={Styles["era-selection__selector__prev"]}

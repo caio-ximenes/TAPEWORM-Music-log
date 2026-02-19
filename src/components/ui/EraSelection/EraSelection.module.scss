@@ -35,8 +35,15 @@ $margin-items: -$era-selection-border;
         border-radius:20em;
         color: $cor-secundaria;
         background-color:$cor-primaria;
+        border: 0px;
         
-
+        &:active{
+            opacity: 0.8;
+            
+        }
+        &:hover{
+            cursor: pointer;
+        }
     }
 
 
