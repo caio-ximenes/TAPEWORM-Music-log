@@ -6,11 +6,13 @@
         &--marquee{
             width: 100%;
             display: inline-block;
-            animation: marquee 8s linear infinite;
+            animation: marquee 5s linear infinite;
         }
         @keyframes marquee {
-            from { transform: translate(110%); }
-            to { transform: translate(-110%); }
+            0%{transform: translate(20%);}
+            50%{transform: translate(-50%);}
+            100%{transform: translate(20%);}
+            
           }
     }
 }
