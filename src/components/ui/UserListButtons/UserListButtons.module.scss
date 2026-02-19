@@ -1,0 +1,15 @@
+@import url('../../../styles/variables.scss');
+
+.user-list-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;    
+    gap: 10%;
+
+    &__button {
+        width: 20%;
+        aspect-ratio: 1 / 1;
+    }
+}
