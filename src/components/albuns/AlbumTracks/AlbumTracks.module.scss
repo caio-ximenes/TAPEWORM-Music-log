@@ -1,0 +1,47 @@
+@import '../../../styles/variables';
+
+.tracklist {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: 20%;
+    font-family: $fonte-textos-menores;
+    border-top: 0.3vmin solid rgba($cor-quaternaria, 0.2);
+    padding: 3% 0px;
+    
+   
+
+    &__title {    
+      font-weight: $font-weight-bold;
+      font-size: clamp($font-size-small, 1.8vmin, $font-size-title-lg);
+      width: 80%;
+      overflow: hidden;
+      white-space: nowrap;
+      
+    
+    }
+
+    @keyframes marquee {
+    from { transform: translateX(100%); }
+    to   { transform: translateX(-100%); }
+  }
+    
+    &__duration{
+        font-weight: $font-weight-regular;
+        font-size: clamp($font-size-small, 1.5vmin, $font-size-title-lg);
+
+    }
+  
+}
+}
