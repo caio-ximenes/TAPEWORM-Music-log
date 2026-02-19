@@ -2,10 +2,10 @@ import React from 'react'
 import Styles from './AlbumCard.module.scss'
 import { Link } from 'react-router-dom'
 
-function AlbumCard({imgSrc, albumName, artistName}) {
-  const rota = albumName.split(' ').join('-').toLowerCase()
+function AlbumCard({imgSrc, albumName, artistName,albumId}) {
+  const rota = albumId
   return (
-    <Link className={Styles['album-card']} to={`/${rota}`}>
+    <Link className={Styles['album-card']} to={`/albums/${rota}`}>
         <img src={imgSrc} alt={albumName} className={Styles['album-card__image']}/>
       <div className={Styles['album-card__info']}>
         <h3 className={Styles['album-card__info__title']}>{albumName}</h3>
