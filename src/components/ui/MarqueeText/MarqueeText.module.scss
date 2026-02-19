@@ -1,0 +1,16 @@
+.marquee-text{
+    &__text{
+        width: 100%;
+        display: inline-block;
+
+        &--marquee{
+            width: 100%;
+            display: inline-block;
+            animation: marquee 8s linear infinite;
+        }
+        @keyframes marquee {
+            from { transform: translate(110%); }
+            to { transform: translate(-110%); }
+          }
+    }
+}
