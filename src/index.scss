@@ -1,20 +1,17 @@
-// Aqui ficam as configurações globais de estilo do projeto
+// Here are the global style configurations of the project
 
+// Expands variables for global project use
+@forward "./styles/variables.scss";
 
-// Expande as variáveis para uso global do projeto
-@forward './styles/variables.scss';
+// Project fonts import
 
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-// Importação das fontes do projeto
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
   user-select: none;
-  }
+}
