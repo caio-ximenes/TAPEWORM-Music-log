@@ -1,0 +1,11 @@
+@import '../../../styles/variables';
+
+.rate-level-bar{
+                display: flex;
+                flex:1;
+                background: linear-gradient(90deg, $cor-primaria var(--rate-level, 0%), $cor-quaternaria var(--rate-fill, 0%));
+                width: 100%;
+                height: auto;
+                min-height: 4px;
+                border-radius: 1vmin;
+}
