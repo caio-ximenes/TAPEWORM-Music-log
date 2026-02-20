@@ -1,0 +1,89 @@
+@import '../../../styles/variables.scss';
+
+.release-review {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:start;
+    padding-top: 3vmin;
+    gap: 1%;
+    border-bottom: 0.1vmin solid rgba($cor-quaternaria,0.1); 
+  &__image-container {
+    height: 100%;
+    width: 8%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    &__image {
+        border-radius: 50%;
+        width: 100%;
+        border: 0.4vmin solid $cor-primaria;
+    }
+  }
+
+  &__review {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 5%;
+
+    &__data {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: stretch;
+        justify-content: start;
+        flex-direction: row;
+        gap: 3%;
+        padding: 1% 0;
+        
+      &__user-evaluation {
+        width: 20%; 
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 12%;
+        
+        
+        &__username {
+            width: 70%;
+            font-size: clamp($font-size-smallest, 1vw, $font-size-medium);
+            text-align: center;
+            font-family: $fonte-textos-menores;
+            color: $cor-primaria;
+            font-weight: $font-weight-bold;
+            margin-right: 5%;
+        }
+
+
+        &__rate {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 5%;
+
+      }
+    }
+}
+
+    &__text {
+        height: 70%;
+        width:100%;
+        font-size: clamp($font-size-smallest, 1.9vmin, $font-size-medium);
+        font-family: $fonte-textos-menores;
+        
+    }
+  
+}
+}
