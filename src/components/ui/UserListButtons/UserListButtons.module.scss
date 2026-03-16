@@ -1,15 +1,12 @@
 @import url('../../../styles/variables.scss');
 
 .user-list-buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;    
-    gap: 10%;
+    display: grid;
+    grid-template-columns: repeat(var(--buttons-count), 1fr);
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+    container-type: size;
 
-    &__button {
-        width: 20%;
-        aspect-ratio: 1 / 1;
-    }
+
 }
