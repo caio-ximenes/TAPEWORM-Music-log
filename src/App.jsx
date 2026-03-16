@@ -7,7 +7,8 @@ import Profile from './pages/Profile/Profile'
 import Template from './pages/Template/Template'
 import RealeasePage,{realeaseLoader} from './pages/RealeasePage/RealeasePage'
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-
+import Home from './pages/Home/Home'
+  
 const queryClient = new QueryClient();
 
 function App() {
@@ -19,6 +20,10 @@ function App() {
         errorElement:<PageNotFound />,
         children:[
           {
+        path:'/',
+        Component:Home
+      },
+      {
         path:'explore',
         Component:Explorer
       },
