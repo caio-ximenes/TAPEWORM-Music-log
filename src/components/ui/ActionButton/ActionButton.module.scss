@@ -1,0 +1,30 @@
+@import '../../../styles/variables.scss';
+
+
+.action-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    border-radius: 10cqi;
+    padding:1.5cqi 1cqi;
+    border: 0.5cqb solid $cor-primaria;
+    background-color: $cor-primaria;
+    color: $cor-secundaria;
+    font-family: $fonte-textos-menores;
+    font-weight: $font-weight-medium;
+    font-size: clamp($font-size-smallest, 3cqb, $font-size-title-lg);
+    cursor: pointer;
+
+    &:active{
+        opacity: 0.8;
+    }
+
+    &--secondary{
+        background-color: $cor-secundaria;
+        color: $cor-primaria;
+        border: 0.5cqb solid $cor-primaria;
+    }
+}
