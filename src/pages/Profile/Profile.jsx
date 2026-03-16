@@ -388,6 +388,7 @@ function Profile() {
             {list.map((item) => (
               <RealeaseIcon
                 key={item.id}
+                albumId={item.id}
                 img={item.img}
                 name={item.name}
                 rate={item.rate}
