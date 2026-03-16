@@ -2,7 +2,7 @@ import React, { use, useEffect } from "react";
 import PageHeader from "../../components/shared/PageHeader/PageHeader";
 import { useLoaderData } from "react-router-dom";
 import RealeaseIcon from "../../components/albuns/RealeaseIcon/RealeaseIcon";
-import { useAlbum } from "../../hooks/useAlbum";
+import { useAlbumsById } from "../../hooks/useAlbumsById";
 import Styles from "./RealeasePage.module.scss";
 import UserListButtons from "../../components/ui/UserListButtons/UserListButtons";
 import { sideEffectButtonRegressiveActivation } from "../../services/buttonsLists";
@@ -20,7 +20,7 @@ export function realeaseLoader({ params }) {
 
 function RealeasePage() {
   const id = useLoaderData();
-  const { data: albums, isLoading, isError } = useAlbum(id);
+  const { data: albums, isLoading, isError } = useAlbumsById(id);
   const [fav, setFav] = React.useState(false);
   const [spin, setSpin] = React.useState(false);
   const [like, setLike] = React.useState(false);
@@ -57,7 +57,7 @@ function RealeasePage() {
         </section>
 
         <section className={Styles["release-page__tracks"]}>
-          <SectionPartition text="Tracks"  />
+          <SectionPartition text="Tracks" />
           <AlbumTracks trackList={albums.tracks} />
         </section>
 
@@ -83,7 +83,7 @@ function RealeasePage() {
 
           <div className={Styles["release-page__review"]}>
             <div className={Styles["release-page__review-header"]}>
-              <SectionPartition text="Review"  />
+              <SectionPartition text="Review" />
             </div>
 
             <div className={Styles["release-page__review-actions"]}>
@@ -118,7 +118,7 @@ function RealeasePage() {
         </section>
 
         <section className={Styles["release-page__essays"]}>
-          <SectionPartition text="Popular Reviews"  />
+          <SectionPartition text="Popular Reviews" />
         </section>
       </main>
     )

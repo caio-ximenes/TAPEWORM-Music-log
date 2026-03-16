@@ -6,10 +6,10 @@ import PageHeader from "../../components/shared/PageHeader/PageHeader";
 import Copyrights from "../../components/shared/Copyrights/Copyrights";
 import ArtistCard from "../../components/artists/ArtistCard/ArtistCard";
 import PagePartition from "../../components/ui/PagePartition/PagePartition";
-import { useAlbum } from "../../hooks/useAlbum";
+import { useAlbums } from "../../hooks/useAlbums";
 
 function Explorer() {
-  const { data: albums, isLoading, error } = useAlbum();
+  const { data: albums, isLoading, error } = useAlbums();
   // Ref to track the current index for partition width cycling without re-renders
   const idPart = useRef(0);
   // Array of possible widths for the section partition
@@ -32,9 +32,6 @@ function Explorer() {
       throw new Error("invalid size");
     }
   }
-
-
- 
 
   // Mock data function for artists
   function getArtists() {
