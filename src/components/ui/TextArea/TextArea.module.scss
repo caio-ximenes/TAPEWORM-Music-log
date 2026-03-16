@@ -20,9 +20,12 @@
     height: auto;
     border: 0px;
     font-family: $fonte-textos-menores;
-    font-size: clamp($font-size-smallest,1.8vmin, $font-size-medium);
-    color: $cor-primaria;
+    font-size: 1.9vmin;
+    color: $cor-terciaria;
     overflow: hidden;
+    overflow-wrap: break-word;
+    
+    
 
     &__button-container {
         position: absolute;
