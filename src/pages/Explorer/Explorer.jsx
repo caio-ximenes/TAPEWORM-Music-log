@@ -5,7 +5,7 @@ import RollSection from "../../components/ui/RollSection/RollSection";
 import PageHeader from "../../components/shared/PageHeader/PageHeader";
 import Copyrights from "../../components/shared/Copyrights/Copyrights";
 import ArtistCard from "../../components/artists/ArtistCard/ArtistCard";
-import SectionPartition from "../../components/ui/SectionPartition/SectionPartition";
+import PagePartition from "../../components/ui/PagePartition/PagePartition";
 
 function Explorer() {
   // Ref to track the current index for partition width cycling without re-renders
@@ -22,7 +22,7 @@ function Explorer() {
       // Increment the counter for the next call
       const ultimo = partitionSizes.length - 1;
       if (idPart.current === ultimo) idPart.current = 0;
-      else{
+      else {
         idPart.current += 1;
       }
       return width;
@@ -204,16 +204,11 @@ function Explorer() {
 
   return (
     <>
-    
       <main>
         {/* Albums Section */}
         <div className={Styles["show-section"]}>
           {/* Partition with dynamic width based on the cycle */}
-          <SectionPartition
-            width={partWidth()}
-            text="Popular Releases"
-             l={true}
-          />
+          <PagePartition width={partWidth()} text="Popular Releases" l={true} />
 
           <RollSection>
             {getReleases().map((album) => (
@@ -230,10 +225,10 @@ function Explorer() {
 
         {/* Artists Section */}
         <div className={Styles["show-section"]}>
-          <SectionPartition
+          <PagePartition
             width={partWidth()} // Gets the next width in the cycle
             text="Popular Artists"
-             l={true}
+            l={true}
           />
           <RollSection>
             {getArtists().map((artist) => (
@@ -246,8 +241,6 @@ function Explorer() {
           </RollSection>
         </div>
       </main>
-
-     
     </>
   );
 }
