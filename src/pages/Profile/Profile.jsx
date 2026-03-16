@@ -12,9 +12,8 @@ import ButtonsHeader from "../../components/ui/ButtonsHeader/ButtonsHeader";
 import RealeaseIcon from "../../components/albuns/RealeaseIcon/RealeaseIcon";
 import Copyrights from "../../components/shared/Copyrights/Copyrights";
 
-
 function Profile() {
-  const [userLists,setUserLists] = useState([]);
+  const [userLists, setUserLists] = useState([]);
   const [list, setList] = useState([]);
 
   const buttons = [
@@ -210,7 +209,8 @@ function Profile() {
             img: "https://picsum.photos/200?random=8",
             name: "Spin List Item 2",
             rate: 0,
-          },{
+          },
+          {
             img: "https://picsum.photos/200?random=7",
             name: "Spin List Item 1",
             rate: 0,
@@ -219,7 +219,8 @@ function Profile() {
             img: "https://picsum.photos/200?random=8",
             name: "Spin List Item 2",
             rate: 0,
-          },{
+          },
+          {
             img: "https://picsum.photos/200?random=7",
             name: "Spin List Item 1",
             rate: 0,
@@ -228,7 +229,8 @@ function Profile() {
             img: "https://picsum.photos/200?random=8",
             name: "Spin List Item 2",
             rate: 0,
-          },{
+          },
+          {
             img: "https://picsum.photos/200?random=7",
             name: "Spin List Item 1",
             rate: 0,
@@ -237,7 +239,8 @@ function Profile() {
             img: "https://picsum.photos/200?random=8",
             name: "Spin List Item 2",
             rate: 0,
-          },{
+          },
+          {
             img: "https://picsum.photos/200?random=7",
             name: "Spin List Item 1",
             rate: 0,
@@ -246,7 +249,8 @@ function Profile() {
             img: "https://picsum.photos/200?random=8",
             name: "Spin List Item 2",
             rate: 0,
-          },{
+          },
+          {
             img: "https://picsum.photos/200?random=7",
             name: "Spin List Item 1",
             rate: 0,
@@ -255,7 +259,8 @@ function Profile() {
             img: "https://picsum.photos/200?random=8",
             name: "Spin List Item 2",
             rate: 0,
-          },{
+          },
+          {
             img: "https://picsum.photos/200?random=7",
             name: "Spin List Item 1",
             rate: 0,
@@ -264,7 +269,8 @@ function Profile() {
             img: "https://picsum.photos/200?random=8",
             name: "Spin List Item 2",
             rate: 0,
-          },{
+          },
+          {
             img: "https://picsum.photos/200?random=7",
             name: "Spin List Item 1",
             rate: 0,
@@ -273,7 +279,8 @@ function Profile() {
             img: "https://picsum.photos/200?random=8",
             name: "Spin List Item 2",
             rate: 0,
-          },{
+          },
+          {
             img: "https://picsum.photos/200?random=7",
             name: "Spin List Item 1",
             rate: 0,
@@ -282,7 +289,8 @@ function Profile() {
             img: "https://picsum.photos/200?random=8",
             name: "Spin List Item 2",
             rate: 0,
-          },{
+          },
+          {
             img: "https://picsum.photos/200?random=7",
             name: "Spin List Item 1",
             rate: 0,
@@ -302,18 +310,17 @@ function Profile() {
 
   function filterLists(section) {
     if (userLists[section]) {
-      if(userLists.length > 0) {
-      setList(userLists[section].list
-      );
+      if (userLists.length > 0) {
+        setList(userLists[section].list);
       }
     }
   }
 
- useEffect(() => {
-  const data = getUserLists();
-  const spun = data.find(item => item.id === "spun");
-  setList(spun.list);
-}, []);
+  useEffect(() => {
+    const data = getUserLists();
+    const spun = data.find((item) => item.id === "spun");
+    setList(spun.list);
+  }, []);
 
   return (
     <>
@@ -324,8 +331,8 @@ function Profile() {
               <ProfileSection name={"Kiur086"} />
             </div>
             <div className={Styles["profile__bio"]}>
-              <SectionPartition text={"Bio"} width={"100%"} />
-              <TextArea 
+              <SectionPartition text={"Bio"}  />
+              <TextArea
                 lines={10}
                 text={
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -339,7 +346,7 @@ function Profile() {
             </div>
             <div className={Styles["profile__artists"]}>
               <div className={Styles["profile__artists-header"]}>
-                <SectionPartition text={"favourite artists"} width={"100%"} />
+                <SectionPartition text={"favourite artists"}  />
               </div>
               <RollSection>
                 {/* Retrieve artist data and map each artist to an ArtistCard component */}
@@ -354,7 +361,7 @@ function Profile() {
             </div>
             <div className={Styles["profile__albums"]}>
               <div className={Styles["profile__albums-header"]}>
-                <SectionPartition text={"favourite releases"} width={"100%"} />
+                <SectionPartition text={"favourite releases"}  />
               </div>
               <RollSection className={Styles["profile__albums-list"]}>
                 {/* Retrieve album data and map each album to an AlbumCard component */}
@@ -387,10 +394,8 @@ function Profile() {
               />
             ))}
           </div>
-          
         </section>
       </main>
-      
     </>
   );
 }

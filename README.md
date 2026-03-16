@@ -8,6 +8,7 @@ A sophisticated React application designed for music enthusiasts to curate, trac
 - **Comprehensive Album Stats**: Visualizes key metrics such as total spins, likes, and rating percentages for each album.
 - **Modular Component Architecture**: Built with reusability in mind, featuring distinct components for Albums, Artists, and UI elements.
 - **Responsive Design**: Styled with SCSS Modules to ensure a consistent and modern aesthetic across devices.
+- **Music Radar**: The coolest feature! It’s a button that allows users to discover new songs with lower popularity based on their interests.
 
 ## 🛠️ Technology Stack
 

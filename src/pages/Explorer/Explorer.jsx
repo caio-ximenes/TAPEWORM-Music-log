@@ -5,9 +5,11 @@ import RollSection from "../../components/ui/RollSection/RollSection";
 import PageHeader from "../../components/shared/PageHeader/PageHeader";
 import Copyrights from "../../components/shared/Copyrights/Copyrights";
 import ArtistCard from "../../components/artists/ArtistCard/ArtistCard";
-import SectionPartition from "../../components/ui/SectionPartition/SectionPartition";
+import PagePartition from "../../components/ui/PagePartition/PagePartition";
+import { useAlbum } from "../../hooks/useAlbum";
 
 function Explorer() {
+  const { data: albums, isLoading, error } = useAlbum();
   // Ref to track the current index for partition width cycling without re-renders
   const idPart = useRef(0);
   // Array of possible widths for the section partition
@@ -22,7 +24,7 @@ function Explorer() {
       // Increment the counter for the next call
       const ultimo = partitionSizes.length - 1;
       if (idPart.current === ultimo) idPart.current = 0;
-      else{
+      else {
         idPart.current += 1;
       }
       return width;
@@ -31,102 +33,8 @@ function Explorer() {
     }
   }
 
-  // Mock data function for albums
-  function getReleases() {
-    const albums = [
-      {
-        id: 1,
-        albumName: "Neon Horizon",
-        artistName: "Cyber Dreams",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 2,
-        albumName: "Echoes of Silence",
-        artistName: "The Void",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 3,
-        albumName: "Solar Flares",
-        artistName: "Star Gazers",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 4,
-        albumName: "Urban Jungle",
-        artistName: "Concrete Poets",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 5,
-        albumName: "Midnight Drive",
-        artistName: "Night Owls",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 6,
-        albumName: "Oceanic Drifts",
-        artistName: "Blue Tides",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 7,
-        albumName: "Rusty Gears",
-        artistName: "The Mechanics",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 8,
-        albumName: "Digital Love",
-        artistName: "Binary Beats",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 9,
-        albumName: "Forest Whispers",
-        artistName: "Green Souls",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 10,
-        albumName: "Vintage Vibes",
-        artistName: "Retro Wave",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 11,
-        albumName: "Electric Storm",
-        artistName: "Thunder Bolts",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 12,
-        albumName: "Quiet Mornings",
-        artistName: "Coffee Club",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 13,
-        albumName: "Abstract Thoughts",
-        artistName: "The Painters",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 14,
-        albumName: "Golden Hour",
-        artistName: "Sun Chasers",
-        imgSrc: "https://picsum.photos/200",
-      },
-      {
-        id: 15,
-        albumName: "Lost in Time",
-        artistName: "Chronos",
-        imgSrc: "https://picsum.photos/200",
-      },
-    ];
-    return albums;
-  }
+
+ 
 
   // Mock data function for artists
   function getArtists() {
@@ -204,19 +112,14 @@ function Explorer() {
 
   return (
     <>
-    
       <main>
         {/* Albums Section */}
         <div className={Styles["show-section"]}>
           {/* Partition with dynamic width based on the cycle */}
-          <SectionPartition
-            width={partWidth()}
-            text="Popular Releases"
-             l={true}
-          />
+          <PagePartition width={partWidth()} text="Popular Releases" l={true} />
 
           <RollSection>
-            {getReleases().map((album) => (
+            {albums?.map((album) => (
               <AlbumCard
                 albumId={album.id}
                 imgSrc={album.imgSrc}
@@ -230,10 +133,10 @@ function Explorer() {
 
         {/* Artists Section */}
         <div className={Styles["show-section"]}>
-          <SectionPartition
+          <PagePartition
             width={partWidth()} // Gets the next width in the cycle
             text="Popular Artists"
-             l={true}
+            l={true}
           />
           <RollSection>
             {getArtists().map((artist) => (
@@ -246,8 +149,6 @@ function Explorer() {
           </RollSection>
         </div>
       </main>
-
-     
     </>
   );
 }

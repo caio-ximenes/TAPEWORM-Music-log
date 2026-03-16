@@ -2,16 +2,17 @@
 
 
 .rate-display{
-    height: fit-content;
-    aspect-ratio: 5 / 3;
+    width: fit-content;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp($font-size-small, 2vmin, $font-size-title-lg);
+    font-size: 100cqmin;
+    line-height: 1;
     font-family: $fonte-titulos;
     font-weight: $font-weight-bold;
     color: $cor-secundaria;
     background-color: $cor-primaria;
-    border-radius: 2vmin;
-    padding: 0vmin 1vmin;
+    border-radius: 200cqi;
+    padding:  15cqh 25cqh;
 }
