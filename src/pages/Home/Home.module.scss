@@ -1,0 +1,98 @@
+@import "../../styles/variables.scss";
+
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 4% 0;
+
+
+
+    &__popular-releases {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5vh;
+
+    }
+
+    &__about-tapeworm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        gap: 5vh;
+
+
+    }
+
+    &__about-title {
+        font-family: $fonte-titulos;
+        font-size: clamp($font-size-title-md, 4vw, $font-size-title-extra-lg);
+        color: $text-color-primary;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.feature-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60vh;
+    max-width: 1500px;
+    padding: 0 5%;
+    gap: 4%;
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+
+    &__content {
+        min-height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 4vh;
+    }
+
+    &__title {
+        font-family: $fonte-titulos-medios;
+        font-size: clamp($font-size-medium, 2.5vw, $font-size-title-md);
+        font-weight: $font-weight-bold;
+        color: $text-color-primary;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: $fonte-textos-menores;
+        font-size: clamp($font-size-small, 1.5vw, $font-size-medium);
+        color: $text-color-primary;
+        line-height: 1.6;
+    }
+
+    &__image-container {
+        width: 40%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e0e0e0; // Gray placeholder for the image
+        min-height: 300px;
+        border-radius: $border-radius-base;
+        overflow: hidden;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        // Hide broken image icon when src is empty
+        color: transparent;
+    }
+}
