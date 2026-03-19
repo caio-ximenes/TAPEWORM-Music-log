@@ -6,6 +6,7 @@ import Best from './pages/Best/Best'
 import Profile from './pages/Profile/Profile'
 import Template from './pages/Template/Template'
 import RealeasePage,{realeaseLoader} from './pages/RealeasePage/RealeasePage'
+import ArtistPage,{artistLoader} from './pages/ArtistPage/ArtistPage'
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Home from './pages/Home/Home'
   
@@ -41,6 +42,14 @@ function App() {
         path:':release',
         Component:RealeasePage,
         loader:realeaseLoader
+      }]
+      },
+      {
+        path:'artists',
+        children:[{
+        path:':artist',
+        Component:ArtistPage,
+        loader:artistLoader
       }]
       }
           

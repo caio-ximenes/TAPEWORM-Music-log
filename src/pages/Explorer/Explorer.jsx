@@ -141,6 +141,7 @@ function Explorer() {
                 key={artist.id}
                 srcImage={artist.srcImage}
                 artistName={artist.artistName}
+                artistId={artist.id}
               />
             ))}
           </RollSection>

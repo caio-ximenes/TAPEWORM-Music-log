@@ -355,6 +355,7 @@ function Profile() {
                     key={artist.id}
                     srcImage={artist.srcImage}
                     artistName={artist.artistName}
+                    artistId={artist.id}
                   />
                 ))}
               </RollSection>

@@ -1,14 +1,15 @@
 import React from 'react'
 import Styles from './ArtistCard.module.scss'
+import { Link } from 'react-router-dom'
 
 
-function ArtistCard({srcImage,artistName}) {
+function ArtistCard({srcImage, artistName, artistId}) {
   return (
-    <li className={Styles['artist-card']}>
-        <img src={srcImage} alt="" className={Styles['artist-card__image']} />
+    <Link className={Styles['artist-card']} to={`/artists/${artistId}`}>
+        <img src={srcImage} alt={artistName} className={Styles['artist-card__image']} />
         <h5 className={Styles['artist-card__text']}>{artistName}</h5>
-    </li>
+    </Link>
   )
 }
 
-export default ArtistCard
+export default ArtistCard
