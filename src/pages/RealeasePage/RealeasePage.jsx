@@ -43,9 +43,10 @@ function RealeasePage() {
     // ativa o próprio
     button.onClick(value);
   };
+   if (isLoading) return null;
+  if (isError || !albums) return null;
 
   return (
-    albums && (
       <main className={Styles["release-page"]}>
         <section className={Styles["release-page__media"]}>
           <RealeaseIcon
@@ -77,7 +78,12 @@ function RealeasePage() {
             </div>
 
             <p className={Styles["release-page__tags"]}>
-              {albums.tags.map((tag) => tag + ",")}
+              {albums.tags.map((tag, i) =>
+              <React.Fragment key={tag}>
+                {tag}
+                {i < albums.tags.length - 1 && ", "}
+              </React.Fragment>
+              )}
             </p>
           </div>
 
@@ -121,7 +127,6 @@ function RealeasePage() {
           <SectionPartition text="Popular Reviews" />
         </section>
       </main>
-    )
   );
 }
 
