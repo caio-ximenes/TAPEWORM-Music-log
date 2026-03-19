@@ -34,7 +34,7 @@ function BooleanIconButton({icon,name,onClick = null,buttonState}) {
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
         className={iconClass}
       />
-      <p className={name ? Styles["boolean-icon-button__name"]:{}}>{name}</p>
+      {name && <p className={name ? Styles["boolean-icon-button__name"]:{}}>{name}</p>}
     </button>
   );
 }
